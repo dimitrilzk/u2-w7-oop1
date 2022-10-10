@@ -15,7 +15,7 @@ class Utente {
   createDiv = () => {
     let div = document.createElement("div");
     div.classList.add("utente");
-    div.innerHTML = this.nome + this.cognome + this.anno;
+    div.innerHTML = this.nome + " " + this.cognome + " " + this.anno;
     document.getElementById("container").appendChild(div);
   };
 }
