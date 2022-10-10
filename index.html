@@ -8,11 +8,12 @@
   </head>
   <body>
     <form>
-      <input id="nome" type="text" placeholder="nome" />
+      <input id="nome" type="text" placeholder="nome" onkeyup="prendiNome()" />
       <input id="cognome" type="text" placeholder="cognome" />
       <input id="data" type="date" />
-      <button onclick="raccogliInput(event)">Registra utente</button>
+      <button type="button" onclick="prendiDatiUtente()">Registra utente</button>
     </form>
+    <div id="container"></div>
     <script src="/script.js"></script>
   </body>
 </html>
